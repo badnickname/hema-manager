@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  proxy:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./proxy/dev.conf:/etc/nginx/nginx.conf:ro
